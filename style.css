@@ -1,0 +1,150 @@
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Para o posicionamento do contador de abóboras */
+}
+
+h1, h2 {
+    color: #ffcc00; /* Cor amarela para os títulos */
+    text-align: center;
+}
+
+/* Menu de navegação */
+nav {
+    background-color: #222;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para a seção do banner */
+.banner {
+    background-image: url('https://th.bing.com/th/id/R.b19f795579cd19a85e07d5e5a69da94b?rik=gN1NPVfISYlX7Q&pid=ImgRaw&r=0');
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 48px;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Efeito parallax */
+.parallax {
+    background-image: url('https://th.bing.com/th/id/R.660d0039498b1c94b579004dbd47f90d?rik=EXHoxwLSbNpoTg&pid=ImgRaw&r=0');
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Estilos para as seções */
+.section {
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para ícones */
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icon {
+    width: 30%;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.icon-image {
+    width: 100px;
+    height: auto;
+}
+
+/* Estilos para o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"], textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+}
+
+/* Estilos para o gif */
+.fun-fact-gif {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Pop-up */
+.popup {
+    position: relative;
+    display: inline-block;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Posiciona acima do botão */
+    left: 50%;
+    margin-left: -80px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.popup:hover .popuptext {
+    visibility: visible;
+    opacity: 1;
+}
